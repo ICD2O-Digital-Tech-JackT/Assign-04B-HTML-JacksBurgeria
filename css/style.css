@@ -14,9 +14,33 @@ h1{
   position:relative;
   top: 10px;
 }
-.Select {
+.Select1 {
   width: 110px;
   position:static;
+}
+.Select2 {
+  width: 60px;
+  position:static;
+}
+.Select3 {
+  width: 80px;
+  position:static;
+}
+.text1{
+  float: left;
+  width: 230px;
+}
+.text2{
+  float: left;
+  width: 420px;
+}
+h2{
+  float: left;
+  font-weight: 800;
+  font-size: 35px;
+}
+select{
+  float: left;
 }
 /* Table styles */
 .Progress{
@@ -25,7 +49,6 @@ h1{
   right: 10px;
   margin: 0;
   padding: 0;
-  background-color: #d1d1d1;
   width: 150px;
   height: 100%;
 }
@@ -33,7 +56,8 @@ h1{
 tr{
   height: 233px;
 }
-th{
+.ProgTH{
+  background-color: #d1d1d1;
   border:solid;
   border-width: 2px;
   border-color: dimgrey;
