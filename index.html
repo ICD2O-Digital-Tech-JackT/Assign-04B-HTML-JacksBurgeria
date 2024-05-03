@@ -22,46 +22,107 @@
 
   <!-- Header -->
   <h1><img class="Logo" src="./images/JacksBurgeriaLogo.png"></h1>
-  <!--Table dividing progress from rest of site -->
-  <table class="Main">
-    <th>
-      <!-- Table for progress display -->
-      <table class="Progress">
-        <!--Burger Progress Img-->
-        <tr class="ProgTH">
-          <th>
-            <img class="Select1" src="./images/Burger.png">
-          </th>
-        </tr>
-        <!--Drink Progress Img-->
-        <tr class="ProgTH">
-          <th>
-            <img class="Select2" src="./images/Drink.png">
-          </th>
-        </tr>
-        <!--Order Progress Img-->
-        <tr class="ProgTH">
-          <th>
-            <img class="Select3" src="./images/Order.png">
-          </th>
-        </tr>
-      </table>
-    </th>
-    <th>
-      <img class="text1" src="./images/BurgerText.png">
-      <br>
-      <h2>Size:</h2>
-      <select name="size" id="size">
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-        <option value="jumbotron">Jumbotron</option>
-      </select>
-
-      
-      <img class="text1" src="./images/DrinkText.png">
-      <img class="text2" src="./images/FinishOrderText.png">
-    </th>
+ 
+  <!-- Table for progress display -->
+  <table class="Progress">
+    <!--Burger Progress Img-->
+    <tr class="ProgTH">
+      <th>
+        <img class="Select1" src="./images/Burger.png">
+      </th>
+    </tr>
+    <!--Drink Progress Img-->
+    <tr class="ProgTH">
+      <th>
+        <img class="Select2" src="./images/Drink.png">
+      </th>
+    </tr>
+    <!--Order Progress Img-->
+    <tr class="ProgTH">
+      <th>
+        <img class="Select3" src="./images/Order.png">
+      </th>
+    </tr>
+  </table> 
+  <!--Main Elements-->
+  <!--      BURGER SECTION      -->
+  <!-- Burger text image -->
+  <img class="text1" src="./images/BurgerText.png">
+  <!--Size input-->
+  <h2>Size:</h2> 
+  <select name="size" id="size">
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="jumbotron">Jumbotron</option>
+  </select>
+  <!--Line breaks-->
+  <br><br>
+  <!--      DRINKS SECTION      -->
+  <!-- Drinks text image -->
+  <img class="text1" src="./images/DrinkText.png"><br><br><br>
+  <table class="sodas">
+    <table class="SodaDisplay">
+      <tr>
+        <th>
+          <img class="soda" src="./images/CocaCola.png">
+        </th> 
+      </tr>
+      <tr class="dark">
+         <th>
+           p
+         </th>
+      </tr>
+    </table>
+    <table class="SodaDisplay">
+      <tr>
+        <th>
+          <img class="soda" src="./images/Pepsi.png">
+        </th> 
+      </tr>
+      <tr class="dark">
+         <th>
+           p
+         </th>
+      </tr>
+    </table>
+    <table class="SodaDisplay">
+      <tr>
+        <th>
+          <img class="soda" src="./images/Sprite.png">
+        </th> 
+      </tr>
+      <tr class="dark">
+         <th>
+           p
+         </th>
+      </tr>
+    </table>
+    <table class="SodaDisplay">
+      <tr>
+        <th>
+          <img class="soda" src="./images/MysteryJuice.png">
+        </th> 
+      </tr>
+      <tr class="dark">
+         <th>
+           p
+         </th>
+      </tr>
+    </table>
   </table>
+  
+  <!--Line breaks-->
+  <br><br><br>
+  <!--      ORDER SECTION      -->
+  <!-- Finish Order text image -->
+  <img class="text2" src="./images/FinishOrderText.png"><br>
+  <div id="OrderOutput">Your order will cost:</div>
+  <!-- Finish Order button -->
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Finish Order
+  </button>
+  <!--Div element if the user has not entered enough data-->
+  <div id="ErrorMsg"></div>
 </body>
 
 </html>
