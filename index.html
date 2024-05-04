@@ -57,6 +57,27 @@
   </select>
   <!--Line breaks-->
   <br><br>
+  <!-- Toppings -->
+  <table class="Toppings">
+    <tr>
+      <th class="thTopp">
+        <button class="ToppingsRight" onclick="delTop('Pickles')">-1</button><button class="ToppingsRight" onclick="addTop('Pickles')">+1</button>
+        <h3 id="pickleDis" class="ToppingName">Pickles</h3>
+      </th>
+      <th class="thTopp">
+        <button class="ToppingsRight" onclick="delTop('Tomatoes')">-1</button><button class="ToppingsRight" onclick="addTop('Tomatoes')">+1</button>
+        <h3 id="tomatoDis" class="ToppingName">Tomatoes</h3>
+      </th>
+      <th class="thTopp">
+        <button class="ToppingsRight" onclick="delTop('Meat')">-1</button><button class="ToppingsRight" onclick="addTop('Meat')">+1</button>
+        <h3 id="meatDis" class="ToppingName">Meat</h3>
+      </th>
+    </tr>
+  </table>
+  <br>
+
+
+  
   <!--      DRINKS SECTION      -->
   <!-- Drinks text image -->
   <img class="text1" src="./images/DrinkText.png"><br><br><br>
@@ -69,7 +90,7 @@
       </tr>
       <tr class="dark">
          <th>
-           p
+          Coca Cola
          </th>
       </tr>
     </table>
@@ -81,7 +102,7 @@
       </tr>
       <tr class="dark">
          <th>
-           p
+           Pepsi
          </th>
       </tr>
     </table>
@@ -93,7 +114,7 @@
       </tr>
       <tr class="dark">
          <th>
-           p
+           Sprite
          </th>
       </tr>
     </table>
@@ -105,14 +126,22 @@
       </tr>
       <tr class="dark">
          <th>
-           p
+           Mystery Juice
          </th>
       </tr>
     </table>
   </table>
-  
+  <!--Drink Select -->
+  <h2>Drink:</h2> 
+  <select name="size" id="size">
+    <option value="cocacola">Coca Cola</option>
+    <option value="pepsi">Pepsi</option>
+    <option value="sprite">Sprite</option>
+    <option value="mysteryjuice">Mystery Juice</option>
+  </select>
   <!--Line breaks-->
   <br><br><br>
+  
   <!--      ORDER SECTION      -->
   <!-- Finish Order text image -->
   <img class="text2" src="./images/FinishOrderText.png"><br>

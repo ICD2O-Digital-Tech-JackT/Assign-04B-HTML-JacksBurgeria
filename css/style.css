@@ -22,6 +22,14 @@ h1{
   width: 60px;
   position:static;
 }
+.Toppings{
+  margin:0;
+}
+.ToppingName{
+  margin:0;
+  font-size: 25px;
+}
+
 .soda{
   width: 50px;
 }
