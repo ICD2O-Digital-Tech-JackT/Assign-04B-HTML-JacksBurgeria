@@ -1,7 +1,8 @@
+/*Background style*/
 html {
   background-color: #e6e6e6;
 }
-
+/*Header style*/
 h1 {
   padding: 30px;
   position: relative;
@@ -9,57 +10,48 @@ h1 {
   left: 10px;
   background-color: #f0f0f0;
 }
-
+/*Logo style*/
 .Logo {
   width: 300px;
   position: relative;
   top: 10px;
 }
-
+/*Progress style*/
 .Select1 {
   width: 110px;
   position: static;
 }
-
 .Select2 {
   width: 60px;
   position: static;
 }
-
-.Toppings {
-  margin: 0;
-}
-
-.ToppingName {
-  margin: 0;
-  font-size: 25px;
-}
-
-.soda {
-  width: 50px;
-}
-
 .Select3 {
   width: 80px;
   position: static;
 }
-
+/*Toppings style*/
+.Toppings {
+  margin: 0;
+}
+.ToppingName {
+  margin: 0;
+  font-size: 25px;
+}
+/*Drinks style*/
+.soda {
+  width: 50px;
+}
+/*Text images style*/
 .text1 {
   width: 230px;
 }
-
 .text2 {
   width: 420px;
 }
-
+/*Drink text style*/
 h2 {
   font-weight: 800;
   font-size: 35px;
-}
-
-select {
-  position: absolute;
-  float: left;
 }
 
 /* Table styles */
@@ -72,16 +64,16 @@ select {
   width: 150px;
   height: 200px;
 }
-
+/*Soda select element style*/
 .soda,
 .SodaDisplay {
   display: inline-block;
 }
-
+/*Drinks display underline text style*/
 .dark {
   background-color: gray;
 }
-
+/*Progress table style*/
 .ProgTH {
   position: static;
   background-color: #d1d1d1;
