@@ -4,7 +4,7 @@ let PicklesN = 0;
 let TomatoesN = 0;
 let MeatN = 1;
 let Drink = document.getElementById("drink");
-let CurrentOrderPrice = 0
+let CurrentOrderPrice = 0;
 /*Tax constant*/
 const HST = 0.13;
 /*function to change the order buttons text so that it says finish order, incase the text was changed to something else */
