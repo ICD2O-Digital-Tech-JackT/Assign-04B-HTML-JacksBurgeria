@@ -16,10 +16,6 @@
 </head>
 
 <body>
-  <!-- Scripts -->
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="/js/script.js"></script>
-
   <!-- Header -->
   <h1><img class="Logo" src="./images/JacksBurgeriaLogo.png"></h1>
  
@@ -27,19 +23,19 @@
   <table class="Progress">
     <!--Burger Progress Img-->
     <tr class="ProgTH">
-      <th>
+      <th id="BurgProg">
         <img class="Select1" src="./images/Burger.png">
       </th>
     </tr>
     <!--Drink Progress Img-->
     <tr class="ProgTH">
-      <th>
+      <th id="DrinkProg">
         <img class="Select2" src="./images/Drink.png">
       </th>
     </tr>
     <!--Order Progress Img-->
     <tr class="ProgTH">
-      <th>
+      <th id="FinProg">
         <img class="Select3" src="./images/Order.png">
       </th>
     </tr>
@@ -50,7 +46,7 @@
   <img class="text1" src="./images/BurgerText.png">
   <!--Size input-->
   <h2>Size:</h2> 
-  <select name="size" id="size">
+  <select name="size" id="sizeselect">
     <option value="medium">Medium</option>
     <option value="large">Large</option>
     <option value="jumbotron">Jumbotron</option>
@@ -62,15 +58,15 @@
     <tr>
       <th class="thTopp">
         <button class="ToppingsRight" onclick="delTop('Pickles')">-1</button><button class="ToppingsRight" onclick="addTop('Pickles')">+1</button>
-        <h3 id="pickleDis" class="ToppingName">Pickles</h3>
+        <h3 id="pickleDis" class="ToppingName">Pickles (0)</h3>
       </th>
       <th class="thTopp">
         <button class="ToppingsRight" onclick="delTop('Tomatoes')">-1</button><button class="ToppingsRight" onclick="addTop('Tomatoes')">+1</button>
-        <h3 id="tomatoDis" class="ToppingName">Tomatoes</h3>
+        <h3 id="tomatoDis" class="ToppingName">Tomatoes (0)</h3>
       </th>
       <th class="thTopp">
         <button class="ToppingsRight" onclick="delTop('Meat')">-1</button><button class="ToppingsRight" onclick="addTop('Meat')">+1</button>
-        <h3 id="meatDis" class="ToppingName">Meat</h3>
+        <h3 id="meatDis" class="ToppingName">Meat (1)</h3>
       </th>
     </tr>
   </table>
@@ -133,7 +129,8 @@
   </table>
   <!--Drink Select -->
   <h2>Drink:</h2> 
-  <select name="size" id="size">
+  <select onchange="UpdateVisuals()" name="drink" id="drink">
+    <option value="none">None</option>
     <option value="cocacola">Coca Cola</option>
     <option value="pepsi">Pepsi</option>
     <option value="sprite">Sprite</option>
@@ -145,13 +142,16 @@
   <!--      ORDER SECTION      -->
   <!-- Finish Order text image -->
   <img class="text2" src="./images/FinishOrderText.png"><br>
+  <!-- Warning message for confirming order -->
   <div id="OrderOutput">Your order will cost:</div>
   <!-- Finish Order button -->
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  <div id="WarningMsg"><br></div>
+  <button onclick="DisplayCurrentOrder()" id ="finish order" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
     Finish Order
   </button>
-  <!--Div element if the user has not entered enough data-->
-  <div id="ErrorMsg"></div>
+  <!-- Scripts -->
+  <script src="/js/script.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
 </html>
