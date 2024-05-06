@@ -29,7 +29,6 @@ function UpdateVisuals() {
   } else{
     document.getElementById("DrinkProg").style.backgroundColor = "gray";
   }
-   
 }
 
 function addTop(Type) {
@@ -46,7 +45,7 @@ function addTop(Type) {
       MeatN = MeatN + 1;
     }
   }
-  UpdateVisuals(PicklesN, TomatoesN, MeatN)
+  UpdateVisuals()
 }
 function delTop(Type) {
   if (Type == "Pickles") {
@@ -62,6 +61,7 @@ function delTop(Type) {
       MeatN = MeatN - 1;
     }
   }
+  UpdateVisuals()
 }
 function CalculatePrice() {
   Drink = document.getElementById("drink");
@@ -77,7 +77,8 @@ function CalculatePrice() {
   CurrentOrderPrice += (PicklesN * 0.25)
   CurrentOrderPrice += (TomatoesN * 0.25)
   CurrentOrderPrice += ((MeatN-1) * 0.85)/*Minus one because only extra meat adds to the price*/
-  if (Drink.Value!="None"){
+  
+  if (Drink.value!="notchosen"){
     CurrentOrderPrice+=3.50
   }
   CurrentOrderPrice*=1.13 /*Tax*/
@@ -85,9 +86,7 @@ function CalculatePrice() {
   return CurrentOrderPrice
 }
 function DisplayCurrentOrder() {
-  if ( document.getElementById("finish order").innerHTML=="Confirm?"){
-    
-  } else{
+  if (document.getElementById("finish order").innerHTML!="Confirm?"){
     let result = CalculatePrice()
     document.getElementById("WarningMsg").innerHTML= "$"+result+"<br>"+"Confirm?";
     document.getElementById("finish order").innerHTML="<p><a href='/confirm.html' alt=Confirm?>Confirm?</a></p>"
